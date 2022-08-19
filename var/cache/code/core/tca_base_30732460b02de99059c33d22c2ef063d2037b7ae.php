@@ -9888,9 +9888,15 @@ return array (
           'texticon' => 'content-bootstrappackage-texticon',
           'textteaser' => 'content-text-teaser',
           'timeline' => 'content-bootstrappackage-timeline',
+          'mask_accordion' => 'mask-ce-accordion',
+          'mask_banner' => 'mask-ce-banner',
           'mask_basic_element' => 'mask-ce-basic_element',
+          'mask_teaser' => 'mask-ce-teaser',
+          'mask_three_column_element' => 'mask-ce-three_column_element',
+          'mask_headline_and_text' => 'mask-ce-headline_and_text',
+          'mask_button_link' => 'mask-ce-button_link',
         ),
-        'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform,tx_mask_description,tx_mask_headline',
+        'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform,tx_mask_headline,tx_mask_text,tx_mask_teaser_text,tx_mask_headlinebox,tx_mask_headline_teaser,tx_mask_description,tx_mask_accordion_description,tx_mask_button_name,tx_mask_banner_title,tx_mask_accordion_header',
       ),
       'interface' => 
       array (
@@ -10261,9 +10267,51 @@ return array (
               ),
               54 => 
               array (
-                0 => 'basic element',
+                0 => 'Accordion',
+                1 => 'mask_accordion',
+                2 => 'mask-ce-accordion',
+                3 => 'mask',
+              ),
+              55 => 
+              array (
+                0 => 'Banner',
+                1 => 'mask_banner',
+                2 => 'mask-ce-banner',
+                3 => 'mask',
+              ),
+              56 => 
+              array (
+                0 => 'Basic Card',
                 1 => 'mask_basic_element',
                 2 => 'mask-ce-basic_element',
+                3 => 'mask',
+              ),
+              57 => 
+              array (
+                0 => 'Teaser',
+                1 => 'mask_teaser',
+                2 => 'mask-ce-teaser',
+                3 => 'mask',
+              ),
+              58 => 
+              array (
+                0 => 'Three Column Element',
+                1 => 'mask_three_column_element',
+                2 => 'mask-ce-three_column_element',
+                3 => 'mask',
+              ),
+              59 => 
+              array (
+                0 => 'Headline and Text',
+                1 => 'mask_headline_and_text',
+                2 => 'mask-ce-headline_and_text',
+                3 => 'mask',
+              ),
+              60 => 
+              array (
+                0 => 'Button Link',
+                1 => 'mask_button_link',
+                2 => 'mask-ce-button_link',
                 3 => 'mask',
               ),
             ),
@@ -12976,11 +13024,36 @@ return array (
             'internal_type' => 'folder',
           ),
         ),
-        'tx_mask_description' => 
+        'tx_mask_3col_el' => 
         array (
           'config' => 
           array (
-            'type' => 'input',
+            'appearance' => 
+            array (
+              'collapseAll' => 1,
+              'enabledControls' => 
+              array (
+                'delete' => 1,
+                'dragdrop' => 1,
+                'hide' => 1,
+                'info' => 1,
+                'localize' => 1,
+                'new' => 1,
+                'sort' => 1,
+              ),
+              'levelLinksPosition' => 'top',
+              'showAllLocalizationLink' => 1,
+              'showNewRecordLink' => 1,
+              'showPossibleLocalizationRecords' => 1,
+              'useSortable' => 1,
+            ),
+            'foreign_field' => 'parentid',
+            'foreign_sortby' => 'sorting',
+            'foreign_table' => 'tx_mask_3col_el',
+            'foreign_table_field' => 'parenttable',
+            'maxitems' => '3',
+            'minitems' => '3',
+            'type' => 'inline',
           ),
           'exclude' => 1,
         ),
@@ -12992,12 +13065,233 @@ return array (
           ),
           'exclude' => 1,
         ),
-        'tx_mask_link' => 
+        'tx_mask_text' => 
         array (
           'config' => 
           array (
-            'renderType' => 'inputLink',
-            'type' => 'input',
+            'type' => 'text',
+            'wrap' => 'virtual',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_teaser_text' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'text',
+            'wrap' => 'virtual',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_teaser_media' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'tx_mask_teaser_media',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'uid_local' => 
+                array (
+                  'config' => 
+                  array (
+                    'appearance' => 
+                    array (
+                      'elementBrowserType' => 'file',
+                      'elementBrowserAllowed' => 'gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,ogg,flac,opus,webm,youtube,vimeo',
+                    ),
+                  ),
+                ),
+              ),
+              'types' => 
+              array (
+                0 => 
+                array (
+                  'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                1 => 
+                array (
+                  'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                2 => 
+                array (
+                  'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                3 => 
+                array (
+                  'showitem' => '
+                                --palette--;;audioOverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                4 => 
+                array (
+                  'showitem' => '
+                                --palette--;;videoOverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                5 => 
+                array (
+                  'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette',
+                ),
+              ),
+            ),
+            'filter' => 
+            array (
+              0 => 
+              array (
+                'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
+                'parameters' => 
+                array (
+                  'allowedFileExtensions' => 'gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,ogg,flac,opus,webm,youtube,vimeo',
+                  'disallowedFileExtensions' => '',
+                ),
+              ),
+            ),
+            'appearance' => 
+            array (
+              'useSortable' => 1,
+              'headerThumbnail' => 
+              array (
+                'field' => 'uid_local',
+                'height' => '45m',
+              ),
+              'enabledControls' => 
+              array (
+                'info' => 1,
+                'new' => false,
+                'dragdrop' => 1,
+                'sort' => 0,
+                'hide' => 1,
+                'delete' => 1,
+                'localize' => 1,
+              ),
+              'elementBrowserEnabled' => 1,
+              'fileByUrlAllowed' => 1,
+              'fileUploadAllowed' => 1,
+            ),
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_teaser_bg' => 
+        array (
+          'config' => 
+          array (
+            'fieldWizard' => 
+            array (
+              'selectIcons' => 
+              array (
+                'disabled' => 1,
+              ),
+            ),
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'Transparent',
+                1 => 'rgba(0,0,0,0)',
+                2 => '',
+                3 => '',
+              ),
+              1 => 
+              array (
+                0 => 'Yellow',
+                1 => '#FFFF00',
+                2 => '',
+                3 => '',
+              ),
+              2 => 
+              array (
+                0 => 'Blue',
+                1 => '#0000FF',
+                2 => '',
+                3 => '',
+              ),
+              3 => 
+              array (
+                0 => 'Grey',
+                1 => '#808080',
+                2 => '',
+                3 => '',
+              ),
+            ),
+            'renderType' => 'selectSingle',
+            'type' => 'select',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_switch_toggle' => 
+        array (
+          'config' => 
+          array (
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'Switch Sides',
+                'invertStateDisplay' => '0',
+              ),
+            ),
+            'renderType' => 'checkboxToggle',
+            'type' => 'check',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_select_color' => 
+        array (
+          'config' => 
+          array (
+            'fieldWizard' => 
+            array (
+              'selectIcons' => 
+              array (
+                'disabled' => 1,
+              ),
+            ),
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'Red',
+                1 => '#FF0000',
+                2 => '',
+                3 => '',
+              ),
+              1 => 
+              array (
+                0 => 'Green',
+                1 => '#00FF00',
+                2 => '',
+                3 => '',
+              ),
+              2 => 
+              array (
+                0 => 'Blue',
+                1 => '#0000FF',
+                2 => '',
+                3 => '',
+              ),
+            ),
+            'renderType' => 'selectSingle',
+            'type' => 'select',
           ),
           'exclude' => 1,
         ),
@@ -13105,6 +13399,324 @@ return array (
               'elementBrowserEnabled' => 1,
               'fileUploadAllowed' => 1,
             ),
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_link' => 
+        array (
+          'config' => 
+          array (
+            'renderType' => 'inputLink',
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_headlinebox' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_headline_teaser' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_description' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_accordion_description' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'text',
+            'wrap' => 'virtual',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_check' => 
+        array (
+          'config' => 
+          array (
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'Blue',
+                'iconIdentifierChecked' => '',
+                'iconIdentifierUnchecked' => '',
+                'invertStateDisplay' => '0',
+              ),
+            ),
+            'type' => 'check',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_button_name' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_button_link' => 
+        array (
+          'config' => 
+          array (
+            'renderType' => 'inputLink',
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_button_color' => 
+        array (
+          'config' => 
+          array (
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_button2' => 
+        array (
+          'config' => 
+          array (
+            'appearance' => 
+            array (
+              'collapseAll' => 1,
+              'enabledControls' => 
+              array (
+                'delete' => 1,
+                'dragdrop' => 1,
+                'hide' => 1,
+                'info' => 1,
+                'localize' => 1,
+                'new' => 1,
+                'sort' => 1,
+              ),
+              'levelLinksPosition' => 'top',
+              'showAllLocalizationLink' => 1,
+              'showNewRecordLink' => 1,
+              'showPossibleLocalizationRecords' => 1,
+              'useSortable' => 1,
+            ),
+            'foreign_sortby' => 'sorting',
+            'foreign_table' => 'tt_content',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'colPos' => 
+                array (
+                  'config' => 
+                  array (
+                    'default' => 999,
+                  ),
+                ),
+                'CType' => 
+                array (
+                  'config' => 
+                  array (
+                    'default' => 'mask_button_link',
+                  ),
+                ),
+              ),
+            ),
+            'type' => 'inline',
+            'foreign_field' => 'tx_mask_button2_parent',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_button2_parent' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'tx_mask_btncolor' => 
+        array (
+          'config' => 
+          array (
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_banner_title' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_banner_bg' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'tx_mask_banner_bg',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'uid_local' => 
+                array (
+                  'config' => 
+                  array (
+                    'appearance' => 
+                    array (
+                      'elementBrowserType' => 'file',
+                      'elementBrowserAllowed' => 'gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai,svg',
+                    ),
+                  ),
+                ),
+              ),
+              'types' => 
+              array (
+                0 => 
+                array (
+                  'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                1 => 
+                array (
+                  'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                2 => 
+                array (
+                  'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                3 => 
+                array (
+                  'showitem' => '
+                                --palette--;;audioOverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                4 => 
+                array (
+                  'showitem' => '
+                                --palette--;;videoOverlayPalette,
+                                --palette--;;filePalette',
+                ),
+                5 => 
+                array (
+                  'showitem' => '
+                                --palette--;;imageoverlayPalette,
+                                --palette--;;filePalette',
+                ),
+              ),
+            ),
+            'filter' => 
+            array (
+              0 => 
+              array (
+                'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
+                'parameters' => 
+                array (
+                  'allowedFileExtensions' => 'gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai,svg',
+                  'disallowedFileExtensions' => '',
+                ),
+              ),
+            ),
+            'appearance' => 
+            array (
+              'useSortable' => 1,
+              'headerThumbnail' => 
+              array (
+                'field' => 'uid_local',
+                'height' => '45m',
+              ),
+              'enabledControls' => 
+              array (
+                'info' => 1,
+                'new' => false,
+                'dragdrop' => 1,
+                'sort' => 0,
+                'hide' => 1,
+                'delete' => 1,
+                'localize' => 1,
+              ),
+              'elementBrowserEnabled' => 1,
+              'fileUploadAllowed' => 1,
+            ),
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_accordion_repeater' => 
+        array (
+          'config' => 
+          array (
+            'appearance' => 
+            array (
+              'collapseAll' => 1,
+              'enabledControls' => 
+              array (
+                'delete' => 1,
+                'dragdrop' => 1,
+                'hide' => 1,
+                'info' => 1,
+                'localize' => 1,
+                'new' => 1,
+                'sort' => 1,
+              ),
+              'levelLinksPosition' => 'top',
+              'showAllLocalizationLink' => 1,
+              'showNewRecordLink' => 1,
+              'showPossibleLocalizationRecords' => 1,
+              'useSortable' => 1,
+            ),
+            'foreign_field' => 'parentid',
+            'foreign_sortby' => 'sorting',
+            'foreign_table' => 'tx_mask_accordion_repeater',
+            'foreign_table_field' => 'parenttable',
+            'type' => 'inline',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_accordion_header' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'exclude' => 1,
+        ),
+        'tx_mask_text_color' => 
+        array (
+          'config' => 
+          array (
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'type' => 'input',
           ),
           'exclude' => 1,
         ),
@@ -15278,6 +15890,40 @@ return array (
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
         ',
         ),
+        'mask_accordion' => 
+        array (
+          'columnsOverrides' => 
+          array (
+            'tx_mask_accordion_header' => 
+            array (
+              'label' => 'Headline',
+            ),
+            'tx_mask_accordion_description' => 
+            array (
+              'label' => 'Description',
+            ),
+            'tx_mask_accordion_repeater' => 
+            array (
+              'label' => 'Items',
+            ),
+          ),
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_accordion_header,tx_mask_accordion_description,tx_mask_accordion_repeater,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'mask_banner' => 
+        array (
+          'columnsOverrides' => 
+          array (
+            'tx_mask_banner_title' => 
+            array (
+              'label' => 'Headline',
+            ),
+            'tx_mask_banner_bg' => 
+            array (
+              'label' => 'Background',
+            ),
+          ),
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_banner_title,tx_mask_banner_bg,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
         'mask_basic_element' => 
         array (
           'columnsOverrides' => 
@@ -15302,8 +15948,100 @@ return array (
               'label' => 'Link',
               'description' => 'some link',
             ),
+            'tx_mask_btncolor' => 
+            array (
+              'label' => 'Color',
+            ),
+            'tx_mask_select_color' => 
+            array (
+              'label' => 'Select Color',
+            ),
           ),
-          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_headline,tx_mask_media,tx_mask_description,tx_mask_link,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_headline,tx_mask_media,tx_mask_description,tx_mask_link,tx_mask_btncolor,tx_mask_select_color,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'mask_teaser' => 
+        array (
+          'columnsOverrides' => 
+          array (
+            'tx_mask_headline_teaser' => 
+            array (
+              'label' => 'Headline',
+            ),
+            'tx_mask_teaser_text' => 
+            array (
+              'label' => 'Text',
+            ),
+            'tx_mask_teaser_bg' => 
+            array (
+              'label' => 'Background',
+            ),
+            'tx_mask_teaser_media' => 
+            array (
+              'label' => 'Media',
+            ),
+            'tx_mask_button2' => 
+            array (
+              'label' => 'Button',
+            ),
+            'tx_mask_switch_toggle' => 
+            array (
+              'label' => 'Switch Sides',
+            ),
+          ),
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_headline_teaser,tx_mask_teaser_text,tx_mask_teaser_bg,tx_mask_teaser_media,tx_mask_button2,tx_mask_switch_toggle,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'mask_three_column_element' => 
+        array (
+          'columnsOverrides' => 
+          array (
+            'tx_mask_3col_el' => 
+            array (
+              'label' => '3 Column Element',
+            ),
+          ),
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_3col_el,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'mask_headline_and_text' => 
+        array (
+          'columnsOverrides' => 
+          array (
+            'tx_mask_headlinebox' => 
+            array (
+              'label' => 'Headline',
+            ),
+            'tx_mask_text' => 
+            array (
+              'label' => 'Text',
+            ),
+            'tx_mask_check' => 
+            array (
+              'label' => 'Background',
+            ),
+          ),
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_headlinebox,tx_mask_text,tx_mask_check,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'mask_button_link' => 
+        array (
+          'columnsOverrides' => 
+          array (
+            'tx_mask_button_name' => 
+            array (
+              'label' => 'Text',
+            ),
+            'tx_mask_button_link' => 
+            array (
+              'label' => 'Link',
+            ),
+            'tx_mask_button_color' => 
+            array (
+              'label' => 'Button Color',
+            ),
+            'tx_mask_text_color' => 
+            array (
+              'label' => 'Text Color',
+            ),
+          ),
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_button_name,tx_mask_button_link,tx_mask_button_color,tx_mask_text_color,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
         ),
       ),
       'palettes' => 
@@ -20545,6 +21283,633 @@ return array (
             'type' => 'passthrough',
             'default' => 0,
           ),
+        ),
+      ),
+    ),
+    'tx_mask_3col_el' => 
+    array (
+      'ctrl' => 
+      array (
+        'sortby' => 'sorting',
+        'tstamp' => 'tstamp',
+        'crdate' => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'editlock' => 'editlock',
+        'versioningWS' => true,
+        'origUid' => 't3_origuid',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'translationSource' => 'l10n_source',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'delete' => 'deleted',
+        'enablecolumns' => 
+        array (
+          'disabled' => 'hidden',
+          'starttime' => 'starttime',
+          'endtime' => 'endtime',
+          'fe_group' => 'fe_group',
+        ),
+        'title' => 'tx_mask_3col_el',
+        'label' => 'tx_mask_icon_name',
+        'iconfile' => 'EXT:mask/Resources/Public/Icons/Extension.svg',
+        'hideTable' => true,
+      ),
+      'palettes' => 
+      array (
+        'language' => 
+        array (
+          'showitem' => '
+                        sys_language_uid;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:sys_language_uid_formlabel,l18n_parent
+                    ',
+        ),
+        'hidden' => 
+        array (
+          'showitem' => '
+                        hidden;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:field.default.hidden
+                    ',
+        ),
+        'access' => 
+        array (
+          'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access',
+          'showitem' => '
+                        starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,
+                        endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel,
+                        --linebreak--,
+                        fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel,
+                        --linebreak--,editlock
+                    ',
+        ),
+      ),
+      'columns' => 
+      array (
+        'editlock' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:editlock',
+          'config' => 
+          array (
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => '',
+              ),
+            ),
+          ),
+        ),
+        'sys_language_uid' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'special' => 'languages',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                1 => -1,
+                2 => 'flags-multiple',
+              ),
+            ),
+            'default' => 0,
+          ),
+        ),
+        'l10n_parent' => 
+        array (
+          'displayCond' => 'FIELD:sys_language_uid:>:0',
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'default' => 0,
+            'foreign_table' => 'tx_mask_3col_el',
+            'foreign_table_where' => 'AND tx_mask_3col_el.pid=###CURRENT_PID### AND tx_mask_3col_el.sys_language_uid IN (-1, 0)',
+          ),
+        ),
+        'l10n_diffsource' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'hidden' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
+          'config' => 
+          array (
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => '',
+                'invertStateDisplay' => true,
+              ),
+            ),
+          ),
+        ),
+        'starttime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime,int',
+            'default' => 0,
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'endtime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime,int',
+            'default' => 0,
+            'range' => 
+            array (
+              'upper' => 2145913200,
+            ),
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'fe_group' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.fe_group',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'size' => 5,
+            'maxitems' => 20,
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hide_at_login',
+                1 => -1,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.any_login',
+                1 => -2,
+              ),
+              2 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.usergroups',
+                1 => '--div--',
+              ),
+            ),
+            'exclusiveKeys' => '-1,-2',
+            'foreign_table' => 'fe_groups',
+          ),
+        ),
+        'parentid' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'default' => 0,
+            'foreign_table' => 'tt_content',
+            'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.sys_language_uid IN (-1, ###REC_FIELD_sys_language_uid###)',
+          ),
+        ),
+        'parenttable' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'sorting' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'tx_mask_icon_name' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'label' => 'Icon',
+          'exclude' => 1,
+        ),
+        'tx_mask_icon_title' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'label' => 'Headline',
+          'exclude' => 1,
+        ),
+        'tx_mask_icon_text' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'text',
+            'wrap' => 'virtual',
+          ),
+          'label' => 'Text',
+          'exclude' => 1,
+        ),
+        'tx_mask_icon_buttons' => 
+        array (
+          'config' => 
+          array (
+            'appearance' => 
+            array (
+              'collapseAll' => 1,
+              'enabledControls' => 
+              array (
+                'delete' => 1,
+                'dragdrop' => 1,
+                'hide' => 1,
+                'info' => 1,
+                'localize' => 1,
+                'new' => 1,
+                'sort' => 1,
+              ),
+              'levelLinksPosition' => 'top',
+              'showAllLocalizationLink' => 1,
+              'showNewRecordLink' => 1,
+              'showPossibleLocalizationRecords' => 1,
+              'useSortable' => 1,
+            ),
+            'foreign_sortby' => 'sorting',
+            'foreign_table' => 'tt_content',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'colPos' => 
+                array (
+                  'config' => 
+                  array (
+                    'default' => 999,
+                  ),
+                ),
+                'CType' => 
+                array (
+                  'config' => 
+                  array (
+                    'default' => 'mask_button_link',
+                  ),
+                ),
+              ),
+            ),
+            'type' => 'inline',
+            'foreign_field' => 'tx_mask_icon_buttons_parent',
+          ),
+          'label' => 'Button',
+          'exclude' => 1,
+        ),
+        't3_origuid' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+            'default' => 0,
+          ),
+        ),
+        'l10n_source' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+            'default' => 0,
+          ),
+        ),
+      ),
+      'types' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_mask_icon_name,tx_mask_icon_title,tx_mask_icon_text,tx_mask_icon_buttons,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
+        ),
+      ),
+    ),
+    'tx_mask_accordion_repeater' => 
+    array (
+      'ctrl' => 
+      array (
+        'sortby' => 'sorting',
+        'tstamp' => 'tstamp',
+        'crdate' => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'editlock' => 'editlock',
+        'versioningWS' => true,
+        'origUid' => 't3_origuid',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'translationSource' => 'l10n_source',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'delete' => 'deleted',
+        'enablecolumns' => 
+        array (
+          'disabled' => 'hidden',
+          'starttime' => 'starttime',
+          'endtime' => 'endtime',
+          'fe_group' => 'fe_group',
+        ),
+        'title' => 'tx_mask_accordion_repeater',
+        'label' => 'tx_mask_accordion_item_header',
+        'iconfile' => 'EXT:mask/Resources/Public/Icons/Extension.svg',
+        'hideTable' => true,
+      ),
+      'palettes' => 
+      array (
+        'language' => 
+        array (
+          'showitem' => '
+                        sys_language_uid;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:sys_language_uid_formlabel,l18n_parent
+                    ',
+        ),
+        'hidden' => 
+        array (
+          'showitem' => '
+                        hidden;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:field.default.hidden
+                    ',
+        ),
+        'access' => 
+        array (
+          'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access',
+          'showitem' => '
+                        starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,
+                        endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel,
+                        --linebreak--,
+                        fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel,
+                        --linebreak--,editlock
+                    ',
+        ),
+      ),
+      'columns' => 
+      array (
+        'editlock' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:editlock',
+          'config' => 
+          array (
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => '',
+              ),
+            ),
+          ),
+        ),
+        'sys_language_uid' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'special' => 'languages',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                1 => -1,
+                2 => 'flags-multiple',
+              ),
+            ),
+            'default' => 0,
+          ),
+        ),
+        'l10n_parent' => 
+        array (
+          'displayCond' => 'FIELD:sys_language_uid:>:0',
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'default' => 0,
+            'foreign_table' => 'tx_mask_accordion_repeater',
+            'foreign_table_where' => 'AND tx_mask_accordion_repeater.pid=###CURRENT_PID### AND tx_mask_accordion_repeater.sys_language_uid IN (-1, 0)',
+          ),
+        ),
+        'l10n_diffsource' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'hidden' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
+          'config' => 
+          array (
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => '',
+                'invertStateDisplay' => true,
+              ),
+            ),
+          ),
+        ),
+        'starttime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime,int',
+            'default' => 0,
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'endtime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime,int',
+            'default' => 0,
+            'range' => 
+            array (
+              'upper' => 2145913200,
+            ),
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'fe_group' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.fe_group',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'size' => 5,
+            'maxitems' => 20,
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hide_at_login',
+                1 => -1,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.any_login',
+                1 => -2,
+              ),
+              2 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.usergroups',
+                1 => '--div--',
+              ),
+            ),
+            'exclusiveKeys' => '-1,-2',
+            'foreign_table' => 'fe_groups',
+          ),
+        ),
+        'parentid' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'default' => 0,
+            'foreign_table' => 'tt_content',
+            'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.sys_language_uid IN (-1, ###REC_FIELD_sys_language_uid###)',
+          ),
+        ),
+        'parenttable' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'sorting' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'tx_mask_accordion_item_header' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'label' => 'Headline',
+          'exclude' => 1,
+        ),
+        'tx_mask_accordion_item_text' => 
+        array (
+          'config' => 
+          array (
+            'enableRichtext' => 1,
+            'type' => 'text',
+            'softref' => 'typolink_tag,email[subst],url',
+          ),
+          'label' => 'Text',
+          'exclude' => 1,
+        ),
+        't3_origuid' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+            'default' => 0,
+          ),
+        ),
+        'l10n_source' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+            'default' => 0,
+          ),
+        ),
+      ),
+      'types' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_mask_accordion_item_header,tx_mask_accordion_item_text,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
         ),
       ),
     ),

@@ -1,8 +1,14 @@
 <f:layout name="Default" />
-<f:section name="Main">
-    <div class="container">
-        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
-    </div>
+<f:section name="Main"> 
+    <f:if condition="{data.pid} == 0">
+        <f:then>
+            <f:render partial="Header/headerdark.html" arguments="{_all}" />
+        </f:then>
+        <f:else>
+            <f:render partial="Header/headerlight.html" arguments="{_all}" />
+        </f:else>
+    </f:if>
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />  
+    <f:render partial="Breadcrumb/breadcrumb.html" arguments="{_all}"/>
+    <f:render partial="Footer/Footer.html" arguments="{_all}"/>
 </f:section>
-
-

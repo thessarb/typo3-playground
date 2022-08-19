@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'typo3/cms-base-distribution',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '99a6229b1a58ae9d6c44edead079c533980764e3',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -204,6 +204,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'netzmacher/bootstrapicons' => array(
+            'pretty_version' => '0.0.2',
+            'version' => '0.0.2.0',
+            'reference' => 'ccdc0cd15618825d2c71d79486f71a445f1ec096',
+            'type' => 'typo3-cms-extension',
+            'install_path' => __DIR__ . '/../../public/typo3conf/ext/bootstrapicons',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'nikic/php-parser' => array(
             'pretty_version' => 'v4.14.0',
@@ -676,6 +685,12 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'typo3-ter/bootstrapicons' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '0.0.2',
+            ),
+        ),
         'typo3-ter/mask' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -716,9 +731,9 @@
             'dev_requirement' => false,
         ),
         'typo3/cms-base-distribution' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '99a6229b1a58ae9d6c44edead079c533980764e3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -1,10 +1,19 @@
-<div class="card" style="width: 18rem;">
-    <f:for each="{data.tx_mask_media}" as="file">
-        <f:image class="card-img-top height-img" image="{file}" width="200" />
-    </f:for>
-    <div class="card-body">
-      <h5 class="card-title">{data.tx_mask_headline}</h5>
-      <p class="card-text">{data.tx_mask_description}</p>
-      <f:link.typolink class="btn btn-primary" parameter="{data.tx_mask_link}">Go somewhere</f:link.typolink>
-    </div>
+<style>
+  .buttonlol{
+    background-color: {data.tx_mask_select_color};
+    outline-color: {data.tx_mask_outlinecolor};
+  }
+</style>
+
+<div style="display:flex; justify-content:center;">
+  <div class="card" style="width: 18rem;">
+      <f:for each="{data.tx_mask_media}" as="file">
+          <f:image class="card-img-top height-img" image="{file}" width="200" />
+      </f:for>
+      <div class="card-body">
+        <h5 class="card-title">{data.tx_mask_headline}</h5>
+        <p class="card-text">{data.tx_mask_description}</p>
+        <f:link.typolink class="btn btn-primary buttonlol" parameter="{data.tx_mask_link}">LoL Geri</f:link.typolink>
+      </div>
+  </div>
 </div>

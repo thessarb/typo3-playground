@@ -1,0 +1,14 @@
+<!-- <f:if condition="{data.tx_mask_button_name}">
+    {data.tx_mask_button_name}
+</f:if>
+<f:if condition="{data.tx_mask_button_link}">
+    <f:link.typolink parameter="{data.tx_mask_button_link}"></f:link.typolink>
+</f:if> -->
+<style>
+    .btn1{
+        background-color: {data.tx_mask_button_color};
+    }
+</style>
+<div class="btn btn1">
+    <a href="{data.tx_mask_button_link}" style="color:{data.tx_mask_text_color}">{data.tx_mask_button_name}</a>
+</div>

@@ -1,0 +1,17 @@
+
+<f:variable name="check" value="{data.tx_mask_check}"/>
+<f:if condition="{check}">
+    <f:then>
+        <f:variable name="colorb" value="bg-primary"/>
+    </f:then>
+    <f:else>
+        <f:variable name="colorb" value="bg-white"/>
+    </f:else>
+</f:if>
+
+<div class="container">
+    <div class="{colorb} headlinetext">
+        <h1>{data.tx_mask_headlinebox}</h1>
+        <p>{data.tx_mask_text -> f:format.nl2br()}</p>
+    </div>
+</div>

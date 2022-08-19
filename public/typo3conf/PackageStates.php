@@ -86,6 +86,9 @@ return [
         'bootstrap_package' => [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
         ],
+        'bootstrapicons' => [
+            'packagePath' => 'typo3conf/ext/bootstrapicons/',
+        ],
         'mask' => [
             'packagePath' => 'typo3conf/ext/mask/',
         ],

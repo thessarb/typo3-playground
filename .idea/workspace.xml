@@ -5,7 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beca75ca-d80c-4ed8-a6b3-39c38f587438" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Configuration/TypoScript/setup.typoscript" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Configuration/TypoScript/setup.typoscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Layouts/Page/Default.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Layouts/Page/Default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/basic_element.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/basic_element.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/basic_element.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/basic_element.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Configuration/TypoScript/setup.typoscript" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Configuration/TypoScript/setup.typoscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Layouts/Page/Default.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Layouts/Page/Default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/basic_element.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/basic_element.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/basic_element.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/basic_element.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/core/tca_base_30732460b02de99059c33d22c2ef063d2037b7ae.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/code/core/tca_base_30732460b02de99059c33d22c2ef063d2037b7ae.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/BackendUser_action_index_fd964802c2f063892924a266b14aa0452ac88bc5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/List_action_index_a8076f7e67aef510a8332955d639cc393faaacca.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/PageLayout_action_pageLayout_b4bc0b1844b0e1c768e67c8db110d77c0497c77d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_index_72acd451603c66456fb475322c0f3b4be86cc2a9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_index_d79a67bb7327cadab5d18241f58088bae2dd45ec.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/ViewHelpers_Be_Widget_Paginate_action_index_146e8f5b9da37b9ec54a887d346cb04c312d2f4a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/layout_Default_html_4b84333abcfe2ee825571eb860f78cb60c4abd81.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/layout_main_html_3708128db0be246a97fe2a8ea156c8762bbc88c3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_BackendUser_IndexListRow_5e57f258aec35eba01366778822c7c138cf04f69.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_BackendUser_PaginatedListWidgetBody_f1bdc3bdb60ec1ecb3a4db08a7fa796f5dc95b40.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_BackendUser_PaginatedListWidget_4136cc52e861af545d40680419973e402c857d5e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Filters_BackendUser_Index_2b0d471f9b55210a38778f440f24a455e1f4cd6c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_List_UploadForm_171ea27a5af5560dfd03abd18a7227751184114b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_Grid_ColumnHeader_15c24558bd6bfd046ec6964e1a321b3acb2246d8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_Grid_Column_68b746339b4dc5e8968bc036a72da88123d55d84.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_Grid_e5eec123e30287b8925dc4297820ada082cc36a1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_RecordDefault_Footer_f7e222b036b959fae59d9ad1337150fbf89117b4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_RecordDefault_Header_bc12c14d38bd76ce591c1b7f20eb1176e34605a4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_RecordDefault_Preview_e4fa096c3cacfc338567b032ba0988c729cb1735.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_Record_02864e705493aee36064aaa08ababfb747cd1eb1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/dashboard_rss/d9fee822f515f03780540e04a72973ca" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/data/dashboard_rss/d9fee822f515f03780540e04a72973ca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/ClassSchemata_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/data/extbase/ClassSchemata_071ee8a9a0f75bd500c27834be3debc2f58f6b88" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/DataMap_TYPO3CMSBeuserDomainModelBackendUserGroup_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/DataMap_TYPO3CMSBeuserDomainModelBackendUser_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/DataMap_TYPO3CMSExtensionmanagerDomainModelExtension_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/DataMap_TYPO3CMSExtensionmanagerDomainModelRepository_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/3ab901800976f6d98ca66ce1e0f147b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/3edf6b44d902550957afdb92bdbad9d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/42f1998c310fbcfd9565e2c8da314a31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/45dbc38199dcb2a16f2b86221a12cdf2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/6eb085bc903b8f1e2b86d616090309f1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/738f3482b5cf108d01ac67c88226581f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/7678c9dbce4ab63de87b3598da55facc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/7aede437f7e70f02f5b9a4d91f90ab11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/82ec5bd0bc6bf0a6ff3781ac08f3aa33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/881cae32506b0e1c4a54b94f8842df89" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/91b0ec9dfdd84917225856e9095837d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/93ccd6aa668b2d46ad9ec2f0a259f866" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/a25d33b1a6dea9de9382cc9c19fbd5a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/c710ee5d531006bea96ad6b2200bc197" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/df7b17f57ba81744b09b59662271e15d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/f934eb2b12c3de682221828e81d50bc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/log/typo3_b34a39b768.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/typo3_b34a39b768.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +72,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,25 +166,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/arber/Desktop/project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "C:/Users/arber/Desktop/event.contenance",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -133,11 +199,26 @@
       <workItem from="1660149848675" duration="550000" />
       <workItem from="1660150844089" duration="1813000" />
       <workItem from="1660199131807" duration="10892000" />
-      <workItem from="1660305414380" duration="1157000" />
+      <workItem from="1660305414380" duration="2121000" />
+      <workItem from="1660550966632" duration="23000" />
+      <workItem from="1660562143331" duration="2789000" />
+      <workItem from="1660630226591" duration="1247000" />
+      <workItem from="1660647960722" duration="1855000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

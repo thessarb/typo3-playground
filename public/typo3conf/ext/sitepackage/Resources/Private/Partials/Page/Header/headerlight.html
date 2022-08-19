@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="containermainmenu">
+        <div class="containermenu">
+            <a href="/typo3/public/"><img src="fileadmin/user_upload/introduction-package.svg" style="height:32px;margin-right:25px;"/></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <f:for each="{mainnavigation}" as="mainnavigationItem">
+                        <f:if condition="{mainnavigationItem.children}">
+                            <f:then>
+                                <li class="btn-group">
+                                    <a type="button" class="btn" href="{mainnavigationItem.link}">{mainnavigationItem.title}</a>
+                                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <f:for each="{mainnavigationItem.children}" as="child">
+                                            <li><a class="dropdown-item" href="{child.link}" target="{child.target}">{child.title}</a></li>
+                                        </f:for>
+                                    </ul>
+                                </li>
+                            </f:then>
+                            <f:else>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="{mainnavigationItem.link}" target="{mainnavigationItem.target}">{mainnavigationItem.title}</a>
+                                </li>
+                            </f:else>
+                        </f:if>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </nav>

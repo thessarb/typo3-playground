@@ -3,37 +3,263 @@
     "tables": {
         "tt_content": {
             "elements": {
-                "basic_element": {
+                "accordion": {
+                    "color": "#0da84b",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_accordion_header",
+                        "tx_mask_accordion_description",
+                        "tx_mask_accordion_repeater"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "accordion",
+                    "label": "Accordion",
+                    "labels": [
+                        "Headline",
+                        "Description",
+                        "Items"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "banner": {
                     "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_banner_title",
+                        "tx_mask_banner_bg"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "banner",
+                    "label": "Banner",
+                    "labels": [
+                        "Headline",
+                        "Background"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "basic_element": {
+                    "color": "#322ac7",
                     "colorOverlay": "#000000",
                     "columns": [
                         "tx_mask_headline",
                         "tx_mask_media",
                         "tx_mask_description",
-                        "tx_mask_link"
+                        "tx_mask_link",
+                        "tx_mask_btncolor",
+                        "tx_mask_select_color"
                     ],
                     "description": "",
                     "descriptions": [
                         "some header",
                         "some media",
                         "some description",
-                        "some link"
+                        "some link",
+                        "",
+                        ""
                     ],
                     "icon": "",
                     "iconOverlay": "",
                     "key": "basic_element",
-                    "label": "basic element",
+                    "label": "Basic Card",
                     "labels": [
                         "Headline",
                         "Media",
                         "Description",
-                        "Link"
+                        "Link",
+                        "Color",
+                        "Select Color"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "button_link": {
+                    "color": "#ff0000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_button_name",
+                        "tx_mask_button_link",
+                        "tx_mask_button_color",
+                        "tx_mask_text_color"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "button_link",
+                    "label": "Button Link",
+                    "labels": [
+                        "Text",
+                        "Link",
+                        "Button Color",
+                        "Text Color"
+                    ],
+                    "saveAndClose": 1,
+                    "shortLabel": "",
+                    "sorting": 2
+                },
+                "headline_and_text": {
+                    "color": "#0fafff",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_headlinebox",
+                        "tx_mask_text",
+                        "tx_mask_check"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "headline_and_text",
+                    "label": "Headline and Text",
+                    "labels": [
+                        "Headline",
+                        "Text",
+                        "Background"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 1
+                },
+                "teaser": {
+                    "color": "#faed37",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_headline_teaser",
+                        "tx_mask_teaser_text",
+                        "tx_mask_teaser_bg",
+                        "tx_mask_teaser_media",
+                        "tx_mask_button2",
+                        "tx_mask_switch_toggle"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "teaser",
+                    "label": "Teaser",
+                    "labels": [
+                        "Headline",
+                        "Text",
+                        "Background",
+                        "Media",
+                        "Button",
+                        "Switch Sides"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "three_column_element": {
+                    "color": "#ce0ce8",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_3col_el"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "three_column_element",
+                    "label": "Three Column Element",
+                    "labels": [
+                        "3 Column Element"
                     ],
                     "shortLabel": "",
                     "sorting": 0
                 }
             },
             "sql": {
+                "tx_mask_3col_el": {
+                    "tt_content": {
+                        "tx_mask_3col_el": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_accordion_description": {
+                    "tt_content": {
+                        "tx_mask_accordion_description": "mediumtext"
+                    }
+                },
+                "tx_mask_accordion_header": {
+                    "tt_content": {
+                        "tx_mask_accordion_header": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_accordion_repeater": {
+                    "tt_content": {
+                        "tx_mask_accordion_repeater": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_banner_bg": {
+                    "tt_content": {
+                        "tx_mask_banner_bg": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_banner_title": {
+                    "tt_content": {
+                        "tx_mask_banner_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_btncolor": {
+                    "tt_content": {
+                        "tx_mask_btncolor": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_button2": {
+                    "tt_content": {
+                        "tx_mask_button2": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_button_color": {
+                    "tt_content": {
+                        "tx_mask_button_color": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_button_link": {
+                    "tt_content": {
+                        "tx_mask_button_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_button_name": {
+                    "tt_content": {
+                        "tx_mask_button_name": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_check": {
+                    "tt_content": {
+                        "tx_mask_check": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                },
                 "tx_mask_description": {
                     "tt_content": {
                         "tx_mask_description": "varchar(255) DEFAULT '' NOT NULL"
@@ -42,6 +268,16 @@
                 "tx_mask_headline": {
                     "tt_content": {
                         "tx_mask_headline": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_headline_teaser": {
+                    "tt_content": {
+                        "tx_mask_headline_teaser": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_headlinebox": {
+                    "tt_content": {
+                        "tx_mask_headlinebox": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
                 "tx_mask_link": {
@@ -53,9 +289,244 @@
                     "tt_content": {
                         "tx_mask_media": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
+                },
+                "tx_mask_select_color": {
+                    "tt_content": {
+                        "tx_mask_select_color": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_switch_toggle": {
+                    "tt_content": {
+                        "tx_mask_switch_toggle": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_teaser_bg": {
+                    "tt_content": {
+                        "tx_mask_teaser_bg": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_teaser_media": {
+                    "tt_content": {
+                        "tx_mask_teaser_media": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_teaser_text": {
+                    "tt_content": {
+                        "tx_mask_teaser_text": "mediumtext"
+                    }
+                },
+                "tx_mask_text": {
+                    "tt_content": {
+                        "tx_mask_text": "mediumtext"
+                    }
+                },
+                "tx_mask_text_color": {
+                    "tt_content": {
+                        "tx_mask_text_color": "varchar(255) DEFAULT '' NOT NULL"
+                    }
                 }
             },
             "tca": {
+                "tx_mask_3col_el": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "3",
+                        "minitems": "3",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_3col_el",
+                    "key": "3col_el",
+                    "type": "inline"
+                },
+                "tx_mask_accordion_description": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_accordion_description",
+                    "key": "accordion_description",
+                    "type": "text"
+                },
+                "tx_mask_accordion_header": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_accordion_header",
+                    "key": "accordion_header",
+                    "type": "string"
+                },
+                "tx_mask_accordion_repeater": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_accordion_repeater",
+                    "key": "accordion_repeater",
+                    "type": "inline"
+                },
+                "tx_mask_banner_bg": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_banner_bg",
+                    "imageoverlayPalette": 1,
+                    "key": "banner_bg",
+                    "type": "file"
+                },
+                "tx_mask_banner_title": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_banner_title",
+                    "key": "banner_title",
+                    "type": "string"
+                },
+                "tx_mask_btncolor": {
+                    "config": {
+                        "renderType": "colorpicker",
+                        "size": 10,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_btncolor",
+                    "key": "btncolor",
+                    "type": "colorpicker"
+                },
+                "tx_mask_button2": {
+                    "cTypes": [
+                        "mask_button_link"
+                    ],
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "tt_content",
+                        "overrideChildTca": {
+                            "columns": {
+                                "colPos": {
+                                    "config": {
+                                        "default": 999
+                                    }
+                                }
+                            }
+                        },
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_button2",
+                    "key": "button2",
+                    "type": "content"
+                },
+                "tx_mask_button_color": {
+                    "config": {
+                        "renderType": "colorpicker",
+                        "size": 10,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button_color",
+                    "key": "button_color",
+                    "type": "colorpicker"
+                },
+                "tx_mask_button_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button_link",
+                    "key": "button_link",
+                    "type": "link"
+                },
+                "tx_mask_button_name": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button_name",
+                    "key": "button_name",
+                    "type": "string"
+                },
+                "tx_mask_check": {
+                    "config": {
+                        "items": [
+                            {
+                                "0": "Blue",
+                                "iconIdentifierChecked": "",
+                                "iconIdentifierUnchecked": "",
+                                "invertStateDisplay": "0"
+                            }
+                        ],
+                        "type": "check"
+                    },
+                    "fullKey": "tx_mask_check",
+                    "key": "check",
+                    "type": "check"
+                },
                 "tx_mask_description": {
                     "config": {
                         "type": "input"
@@ -70,6 +541,22 @@
                     },
                     "fullKey": "tx_mask_headline",
                     "key": "headline",
+                    "type": "string"
+                },
+                "tx_mask_headline_teaser": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_headline_teaser",
+                    "key": "headline_teaser",
+                    "type": "string"
+                },
+                "tx_mask_headlinebox": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_headlinebox",
+                    "key": "headlinebox",
                     "type": "string"
                 },
                 "tx_mask_link": {
@@ -103,6 +590,291 @@
                     "imageoverlayPalette": 1,
                     "key": "media",
                     "type": "file"
+                },
+                "tx_mask_select_color": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            [
+                                "Red",
+                                "#FF0000",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Green",
+                                "#00FF00",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Blue",
+                                "#0000FF",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_select_color",
+                    "key": "select_color",
+                    "type": "select"
+                },
+                "tx_mask_switch_toggle": {
+                    "config": {
+                        "items": [
+                            {
+                                "0": "Switch Sides",
+                                "invertStateDisplay": "0"
+                            }
+                        ],
+                        "renderType": "checkboxToggle",
+                        "type": "check"
+                    },
+                    "fullKey": "tx_mask_switch_toggle",
+                    "key": "switch_toggle",
+                    "type": "check"
+                },
+                "tx_mask_teaser_bg": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            [
+                                "Transparent",
+                                "rgba(0,0,0,0)",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Yellow",
+                                "#FFFF00",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Blue",
+                                "#0000FF",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Grey",
+                                "#808080",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_teaser_bg",
+                    "key": "teaser_bg",
+                    "type": "select"
+                },
+                "tx_mask_teaser_media": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileByUrlAllowed": 1,
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_teaser_media",
+                    "key": "teaser_media",
+                    "onlineMedia": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "type": "media"
+                },
+                "tx_mask_teaser_text": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_teaser_text",
+                    "key": "teaser_text",
+                    "type": "text"
+                },
+                "tx_mask_text": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_text",
+                    "key": "text",
+                    "type": "text"
+                },
+                "tx_mask_text_color": {
+                    "config": {
+                        "renderType": "colorpicker",
+                        "size": 10,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_text_color",
+                    "key": "text_color",
+                    "type": "colorpicker"
+                }
+            }
+        },
+        "tx_mask_3col_el": {
+            "sql": {
+                "tx_mask_icon_buttons": {
+                    "tx_mask_3col_el": {
+                        "tx_mask_icon_buttons": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_icon_name": {
+                    "tx_mask_3col_el": {
+                        "tx_mask_icon_name": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_icon_text": {
+                    "tx_mask_3col_el": {
+                        "tx_mask_icon_text": "mediumtext"
+                    }
+                },
+                "tx_mask_icon_title": {
+                    "tx_mask_3col_el": {
+                        "tx_mask_icon_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_icon_buttons": {
+                    "cTypes": [
+                        "mask_button_link"
+                    ],
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "tt_content",
+                        "overrideChildTca": {
+                            "columns": {
+                                "colPos": {
+                                    "config": {
+                                        "default": 999
+                                    }
+                                }
+                            }
+                        },
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_icon_buttons",
+                    "inlineParent": "tx_mask_3col_el",
+                    "key": "icon_buttons",
+                    "label": "Button",
+                    "order": 4,
+                    "type": "content"
+                },
+                "tx_mask_icon_name": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_icon_name",
+                    "inlineParent": "tx_mask_3col_el",
+                    "key": "icon_name",
+                    "label": "Icon",
+                    "order": 1,
+                    "type": "string"
+                },
+                "tx_mask_icon_text": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_icon_text",
+                    "inlineParent": "tx_mask_3col_el",
+                    "key": "icon_text",
+                    "label": "Text",
+                    "order": 3,
+                    "type": "text"
+                },
+                "tx_mask_icon_title": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_icon_title",
+                    "inlineParent": "tx_mask_3col_el",
+                    "key": "icon_title",
+                    "label": "Headline",
+                    "order": 2,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_accordion_repeater": {
+            "sql": {
+                "tx_mask_accordion_item_header": {
+                    "tx_mask_accordion_repeater": {
+                        "tx_mask_accordion_item_header": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_accordion_item_text": {
+                    "tx_mask_accordion_repeater": {
+                        "tx_mask_accordion_item_text": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_accordion_item_header": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_accordion_item_header",
+                    "inlineParent": "tx_mask_accordion_repeater",
+                    "key": "accordion_item_header",
+                    "label": "Headline",
+                    "order": 1,
+                    "type": "string"
+                },
+                "tx_mask_accordion_item_text": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_accordion_item_text",
+                    "inlineParent": "tx_mask_accordion_repeater",
+                    "key": "accordion_item_text",
+                    "label": "Text",
+                    "order": 2,
+                    "type": "richtext"
                 }
             }
         }

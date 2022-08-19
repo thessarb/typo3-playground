@@ -122,6 +122,10 @@ class ComposerStaticInit8cda9fb811c0854915d58cf21d4feb11
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
         ),
+        'N' => 
+        array (
+            'Netzmacher\\Bootstrapicons\\' => 26,
+        ),
         'M' => 
         array (
             'Masterminds\\' => 12,
@@ -466,6 +470,10 @@ class ComposerStaticInit8cda9fb811c0854915d58cf21d4feb11
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Netzmacher\\Bootstrapicons\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/public/typo3conf/ext/bootstrapicons/Classes',
         ),
         'Masterminds\\' => 
         array (

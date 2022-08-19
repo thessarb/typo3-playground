@@ -1,0 +1,25 @@
+<div class="threecolel">   
+    <f:if condition="{data.tx_mask_3col_el}">
+        <f:for each="{data.tx_mask_3col_el}" as="data_item">
+            <div class="cardbox">
+                <i class="bi bi-{data_item.tx_mask_icon_name}" style="display:flex;justify-content:center;height:30px;transform:scale(4,4)"></i>
+                <div class="textbox">
+                        <h1>{data_item.tx_mask_icon_title}</h1>
+                        <p>{data_item.tx_mask_icon_text -> f:format.nl2br()}</p>
+                </div>
+                <div class=" boxbutton">
+                    <f:if condition="{data_item.tx_mask_icon_buttons}">
+                        <f:for each="{data_item.tx_mask_icon_buttons}" as="customButton">
+                            <div class="btn btn1" style="background-color: {customButton.tx_mask_button_color};">
+                                <a href="{customButton.tx_mask_button_link}" style="color: {customButton.tx_mask_text_color};">
+                                    {customButton.tx_mask_button_name}
+                                </a>
+                            </div> 
+                        </f:for>
+                    </f:if>
+                </div>
+            </div>
+        </f:for>
+    </f:if>
+</div>
+

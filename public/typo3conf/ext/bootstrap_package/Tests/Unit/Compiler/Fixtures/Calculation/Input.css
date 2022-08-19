@@ -1,0 +1,16 @@
+.case-without-variable {
+  border-radius: 1rem/2;
+}
+
+.case-with-variable {
+  border-radius: 0.5rem;
+}
+
+.case-precalculated-variable {
+  border-radius: 0.25rem;
+}
+
+button {
+  width: 0.5rem;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=Input.css.map */

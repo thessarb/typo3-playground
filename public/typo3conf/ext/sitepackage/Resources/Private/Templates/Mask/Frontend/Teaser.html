@@ -1,0 +1,48 @@
+<f:variable name="backgroundOptions" value="{data.tx_mask_teaser_bg}"/>
+<f:switch expression="{backgroundOptions}">
+    <f:case value="">
+        <f:variable name="backgroundColor" value="{backgroundOptions}"/>
+    </f:case>
+    <f:case value="#FFFF00">
+        <f:variable name="backgroundColor" value="{backgroundOptions}"/>
+    </f:case>
+    <f:case value="#0000ff">
+        <f:variable name="backgroundColor" value="{backgroundOptions}"/>
+    </f:case>
+    <f:case value="#808080">
+         <f:variable name="backgroundColor" value="{backgroundOptions}"/>
+    </f:case>
+</f:switch>
+<f:variable name="switch" value="{data.tx_mask_switch_toggle}"/>
+<f:if condition="{switch}">
+    <f:then>
+        <f:variable name="side0" value="teaser-container2"/>
+    </f:then>
+    <f:else>
+        <f:variable name="side0" value="teaser-container"/>
+    </f:else>
+</f:if>
+
+<div class="teaser1" style="background-color: {backgroundColor};">
+    <div class="{side0}">
+        <div class="content-body">
+            <h1>{data.tx_mask_headline_teaser}</h1>
+            <p>{data.tx_mask_teaser_text -> f:format.nl2br()}</p>
+            <div>
+                <f:if condition="{data.tx_mask_button2}">
+                    <f:for each="{data.tx_mask_button2}" as="data_item">
+                        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+                    </f:for>
+            </div>
+            </f:if>
+        </div>
+        <div class="content-media">
+            <f:for each="{data.tx_mask_teaser_media}" as="file">
+                <f:media file="{file}" width="480px" height="280px" />
+                {file.description}
+            </f:for>
+
+        </div>
+
+    </div>
+</div>

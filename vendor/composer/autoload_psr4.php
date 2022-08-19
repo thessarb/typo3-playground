@@ -81,6 +81,7 @@ return array(
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'Netzmacher\\Bootstrapicons\\' => array($baseDir . '/public/typo3conf/ext/bootstrapicons/Classes'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
     'MASK\\Mask\\' => array($baseDir . '/public/typo3conf/ext/mask/Classes'),
     'Helhum\\Typo3Console\\' => array($vendorDir . '/helhum/typo3-console/Classes/Console', $vendorDir . '/helhum/typo3-console/Classes/Compatibility'),

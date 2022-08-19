@@ -1,0 +1,35 @@
+.teaser1 {
+  display: flex;
+  justify-content: center;
+}
+
+.content-body {
+  max-width: 40%;
+}
+
+.teaser-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+}
+
+.content-media {
+  width: 33vw;
+  height: 280px;
+}
+
+.teaser2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.teaser-container2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+}/*# sourceMappingURL=teaser.css.map */

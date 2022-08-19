@@ -1130,6 +1130,25 @@ foreach ($icons as $icon) {
 
 
 /**
+ * Extension: bootstrapicons
+ * File: C:/xampp/htdocs/typo3/public/typo3conf/ext/bootstrapicons/ext_localconf.php
+ */
+
+
+
+defined('TYPO3_MODE') || die();
+
+call_user_func(function()
+{
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript(
+    'bootstrapicons',
+    'setup',
+    "@import 'EXT:bootstrapicons/Configuration/TypoScript/setup.ts'"
+  );
+});
+
+
+/**
  * Extension: mask
  * File: C:/xampp/htdocs/typo3/public/typo3conf/ext/mask/ext_localconf.php
  */

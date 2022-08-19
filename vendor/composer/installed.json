@@ -1565,6 +1565,41 @@
             "install-path": "../masterminds/html5"
         },
         {
+            "name": "netzmacher/bootstrapicons",
+            "version": "0.0.2",
+            "version_normalized": "0.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.die-netzmacher.de/typo3/bootstrapicons",
+                "reference": "ccdc0cd15618825d2c71d79486f71a445f1ec096"
+            },
+            "require": {
+                "typo3/cms-core": ">=10.0.0 <12.0.0"
+            },
+            "replace": {
+                "typo3-ter/bootstrapicons": "self.version"
+            },
+            "time": "2021-11-09T20:11:14+00:00",
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "bootstrapicons"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "Netzmacher\\Bootstrapicons\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Bootstrapicons! Frontend editing by frontend users.",
+            "install-path": "../../public/typo3conf/ext/bootstrapicons"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v4.14.0",
             "version_normalized": "4.14.0.0",

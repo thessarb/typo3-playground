@@ -158,6 +158,8 @@ page {
     }
 
     includeJSFooterlibs {
+        jQueryJs = https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+        jQueryJs.external = 1
         bootstrapJs = https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
         bootstrapJs.external = 1
     }
@@ -166,7 +168,6 @@ page {
         sitepackage_scripts = EXT:sitepackage/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
-
 
 ################
 #### CONFIG ####
