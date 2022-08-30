@@ -1,0 +1,12 @@
+<f:form action="update" controller="StoreInventory" objectName="product" method="put">
+    <div class="form-group">
+        <label>Name</label><br>
+        <f:form.textfield property="name" value="{product.name}" class="form-control"/><br>
+        <label>Description</label><br>
+        <f:form.textarea property="description" value="{product.description}" class="form-control"/><br>
+        <label>Quantity</label><br>
+        <f:form.textfield property="quantity" value="{product.quantity}" class="form-control"/><br>
+        <f:form.hidden property="uid" value="{product.uid}" />
+        <f:form.button class="btn btn-warning">Submit</f:form.button>
+    </div>
+</f:form>

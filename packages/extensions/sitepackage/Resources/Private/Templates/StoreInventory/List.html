@@ -1,18 +1,49 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
-    <table border="1" cellspacing="1" cellpadding="5">
-        <tr>
-            <td>Product name</td>
-            <td>Product description</td>
-            <td>Quantity</td>
-        </tr>
-        <f:for each="{products}" as="product">
+<div class="container products-container" style="padding-bottom:30px">
+    <h2>Products:</h2>
+    <table class="table">
+        <thead>
             <tr>
-                <td align="top">{product.name}</td>
-                <td align="top">
-                    <f:format.crop maxCharacters="100">{product.description}</f:format.crop>
-                </td>
-                <td align="top">{product.quantity}</td>
+            <th scope="col">#</th>
+            <th scope="col">Product name</th>
+            <th scope="col">Product description</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
             </tr>
-        </f:for>
-    </table>
-</html>
+        </thead>
+        <tbody>
+            <f:for each="{products}" as="product" key="index">
+                <tr>
+                <th scope="row">{index+1}</th>
+                <td>{product.name}</td>
+                <td><f:format.crop maxCharacters="100">{product.description}</f:format.crop></td>
+                <td>{product.quantity}</td>
+                <td>
+                    <f:form action="edit" controller="StoreInventory" objectName="product" method="post">
+                        <f:form.hidden property="uid" value="{product.uid}" />
+                        <f:form.button class="btn btn-warning">Edit</f:form.button>
+                    </f:form>
+                </td>
+                <td>
+                    <f:form action="delete" controller="StoreInventory" objectName="product" method="delete">
+                        <f:form.hidden property="uid" value="{product.uid}" />
+                        <f:form.button class="btn btn-danger">Delete</f:form.button>
+                    </f:form>
+                </td>
+                </tr>
+            </f:for>
+        </tbody>
+        </table>
+    <h2>Add New Product:</h2>
+    <f:form action="store" controller="StoreInventory" objectName="product" method="post">
+        <div class="form-group">
+            <label>Name</label><br>
+            <f:form.textfield property="name" class="form-control"/><br>
+            <label>Description</label><br>
+            <f:form.textarea property="description" class="form-control"/><br>
+            <label>Quantity</label><br>
+            <f:form.textfield property="quantity" class="form-control"/><br>
+            <f:form.button class="btn btn-success">Submit</f:form.button>
+        </div>
+    </f:form>
+</div>
