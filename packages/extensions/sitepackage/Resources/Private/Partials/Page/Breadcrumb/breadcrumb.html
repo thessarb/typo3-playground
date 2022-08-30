@@ -1,0 +1,11 @@
+<f:if condition="{data.pid} != 0">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <div class="bredicrumb">
+            <ol class="breadcrumb">
+                <f:for each="{breadcrumbMenu}" as="breadcrumbMenuItem">
+                    <li class="breadcrumb-item"><a href="{breadcrumbMenuItem.link}">{breadcrumbMenuItem.title}</a></li>
+                </f:for>
+            </ol>
+        </div>
+    </nav>    
+</f:if>

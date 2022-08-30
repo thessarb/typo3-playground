@@ -70,6 +70,11 @@ page {
                 includeSpacer = 1
                 as = mainnavigation
             }
+            50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            50 {
+                as = breadcrumbMenu
+                special = rootline
+            }
         }
     }
 
@@ -166,6 +171,7 @@ page {
 
     includeJSFooter {
         sitepackage_scripts = EXT:sitepackage/Resources/Public/JavaScript/Dist/scripts.js
+        accordion_script = EXT:sitepackage/Resources/Public/JavaScript/Dist/Mask/accordion.js
     }
 }
 
@@ -205,3 +211,33 @@ config {
     concatenateJs = 0
     concatenateCss = 0
 }
+
+#########################
+#### Content Element ####
+#########################
+lib.contentElement {
+    templateRootPaths.200 = EXT:sitepackage/Resources/Private/Templates/CustomContentEl/
+}
+tt_content {
+    pokemon_element =< lib.contentElement
+    pokemon_element {
+        templateName = PokemonStarters
+        dataProcessing{
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+                as = pokemon_images
+            }
+        }
+    }
+
+    inheritance_element =< lib.contentElement
+    inheritance_element {
+        templateName = InheritanceTest
+        dataProcessing.40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        dataProcessing.40 {
+            table = mse_tb_my_list
+            as = myListItems
+        }
+    }
+}   

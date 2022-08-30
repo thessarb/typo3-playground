@@ -10100,214 +10100,226 @@ return array (
               ),
               30 => 
               array (
+                0 => 'Inheritance Element',
+                1 => 'inheritance_element',
+                2 => 'content-target',
+              ),
+              31 => 
+              array (
+                0 => 'Pokemon Element',
+                1 => 'pokemon_element',
+                2 => 'content-target',
+              ),
+              32 => 
+              array (
                 0 => 'LLL:EXT:examples/Resources/Private/Language/locallang.xlf:examples_newcontentelement_title',
                 1 => 'examples_newcontentelement',
                 2 => 'content-text',
               ),
-              31 => 
+              33 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.lists',
                 1 => '--div--',
                 2 => NULL,
                 3 => 'lists',
               ),
-              32 => 
+              34 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.4',
                 1 => 'bullets',
                 2 => 'content-bullets',
                 3 => 'lists',
               ),
-              33 => 
+              35 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.5',
                 1 => 'table',
                 2 => 'content-table',
                 3 => 'lists',
               ),
-              34 => 
+              36 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.6',
                 1 => 'uploads',
                 2 => 'content-special-uploads',
                 3 => 'lists',
               ),
-              35 => 
+              37 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.menu',
                 1 => '--div--',
                 2 => NULL,
                 3 => 'menu',
               ),
-              36 => 
+              38 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_abstract',
                 1 => 'menu_abstract',
                 2 => 'content-menu-abstract',
                 3 => 'menu',
               ),
-              37 => 
+              39 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_categorized_content',
                 1 => 'menu_categorized_content',
                 2 => 'content-menu-categorized',
                 3 => 'menu',
               ),
-              38 => 
+              40 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_categorized_pages',
                 1 => 'menu_categorized_pages',
                 2 => 'content-menu-categorized',
                 3 => 'menu',
               ),
-              39 => 
+              41 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_pages',
                 1 => 'menu_pages',
                 2 => 'content-menu-pages',
                 3 => 'menu',
               ),
-              40 => 
+              42 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_subpages',
                 1 => 'menu_subpages',
                 2 => 'content-menu-pages',
                 3 => 'menu',
               ),
-              41 => 
+              43 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_recently_updated',
                 1 => 'menu_recently_updated',
                 2 => 'content-menu-recently-updated',
                 3 => 'menu',
               ),
-              42 => 
+              44 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_related_pages',
                 1 => 'menu_related_pages',
                 2 => 'content-menu-related',
                 3 => 'menu',
               ),
-              43 => 
+              45 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_section',
                 1 => 'menu_section',
                 2 => 'content-menu-section',
                 3 => 'menu',
               ),
-              44 => 
+              46 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_section_pages',
                 1 => 'menu_section_pages',
                 2 => 'content-menu-section',
                 3 => 'menu',
               ),
-              45 => 
+              47 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_sitemap',
                 1 => 'menu_sitemap',
                 2 => 'content-menu-sitemap',
                 3 => 'menu',
               ),
-              46 => 
+              48 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_sitemap_pages',
                 1 => 'menu_sitemap_pages',
                 2 => 'content-menu-sitemap-pages',
                 3 => 'menu',
               ),
-              47 => 
+              49 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.special',
                 1 => '--div--',
                 2 => NULL,
                 3 => 'special',
               ),
-              48 => 
+              50 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.13',
                 1 => 'shortcut',
                 2 => 'content-special-shortcut',
                 3 => 'special',
               ),
-              49 => 
+              51 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.14',
                 1 => 'list',
                 2 => 'content-plugin',
                 3 => 'special',
               ),
-              50 => 
+              52 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.16',
                 1 => 'div',
                 2 => 'content-special-div',
                 3 => 'special',
               ),
-              51 => 
+              53 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.17',
                 1 => 'html',
                 2 => 'content-special-html',
                 3 => 'special',
               ),
-              52 => 
+              54 => 
               array (
                 0 => 'Form',
                 1 => 'form_formframework',
                 2 => 'content-form',
                 3 => 'forms',
               ),
-              53 => 
+              55 => 
               array (
                 0 => 'Login Form',
                 1 => 'felogin_login',
                 2 => 'EXT:felogin/Resources/Public/Icons/Extension.png',
                 3 => 'forms',
               ),
-              54 => 
+              56 => 
               array (
                 0 => 'Accordion',
                 1 => 'mask_accordion',
                 2 => 'mask-ce-accordion',
                 3 => 'mask',
               ),
-              55 => 
+              57 => 
               array (
                 0 => 'Banner',
                 1 => 'mask_banner',
                 2 => 'mask-ce-banner',
                 3 => 'mask',
               ),
-              56 => 
+              58 => 
               array (
                 0 => 'Basic Card',
                 1 => 'mask_basic_element',
                 2 => 'mask-ce-basic_element',
                 3 => 'mask',
               ),
-              57 => 
+              59 => 
               array (
                 0 => 'Teaser',
                 1 => 'mask_teaser',
                 2 => 'mask-ce-teaser',
                 3 => 'mask',
               ),
-              58 => 
+              60 => 
               array (
                 0 => 'Three Column Element',
                 1 => 'mask_three_column_element',
                 2 => 'mask-ce-three_column_element',
                 3 => 'mask',
               ),
-              59 => 
+              61 => 
               array (
                 0 => 'Headline and Text',
                 1 => 'mask_headline_and_text',
                 2 => 'mask-ce-headline_and_text',
                 3 => 'mask',
               ),
-              60 => 
+              62 => 
               array (
                 0 => 'Button Link',
                 1 => 'mask_button_link',
@@ -11454,6 +11466,13 @@ return array (
                 1 => '',
                 2 => '',
                 3 => 'none',
+              ),
+              1 => 
+              array (
+                0 => 'The Store Inventory List',
+                1 => 'sitepackage_inventorylist',
+                2 => 'EXT:sitepackage/Resources/Public/Icons/cat.svg',
+                3 => 'default',
               ),
             ),
             'itemGroups' => 
@@ -13719,6 +13738,157 @@ return array (
             'type' => 'input',
           ),
           'exclude' => 1,
+        ),
+        'selected_pokemon' => 
+        array (
+          'exclude' => 0,
+          'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tt_content.selected_pokemon',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'Pikachu',
+                1 => 'pikachu',
+              ),
+              1 => 
+              array (
+                0 => 'Squirtle',
+                1 => 'squirtle',
+              ),
+              2 => 
+              array (
+                0 => 'Bulbasaur',
+                1 => 'bulbasaur',
+              ),
+              3 => 
+              array (
+                0 => 'Charmander',
+                1 => 'charmander',
+              ),
+            ),
+            'default' => 'pikachu',
+          ),
+        ),
+        'type_pokemon' => 
+        array (
+          'exclude' => 0,
+          'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tt_content.type_pokemon',
+          'config' => 
+          array (
+            'type' => 'radio',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'Water',
+                1 => 'water',
+              ),
+              1 => 
+              array (
+                0 => 'Fire',
+                1 => 'fire',
+              ),
+              2 => 
+              array (
+                0 => 'Grass',
+                1 => 'grass',
+              ),
+            ),
+          ),
+        ),
+        'image_pokemon' => 
+        array (
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.image_pokemon',
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'image',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'uid_local' => 
+                array (
+                  'config' => 
+                  array (
+                    'appearance' => 
+                    array (
+                      'elementBrowserType' => 'file',
+                      'elementBrowserAllowed' => 'gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,ogg,flac,opus,webm,youtube,vimeo',
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            'filter' => 
+            array (
+              0 => 
+              array (
+                'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
+                'parameters' => 
+                array (
+                  'allowedFileExtensions' => 'gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,ogg,flac,opus,webm,youtube,vimeo',
+                  'disallowedFileExtensions' => '',
+                ),
+              ),
+            ),
+            'appearance' => 
+            array (
+              'useSortable' => true,
+              'headerThumbnail' => 
+              array (
+                'field' => 'uid_local',
+                'height' => '45m',
+              ),
+              'enabledControls' => 
+              array (
+                'info' => true,
+                'new' => false,
+                'dragdrop' => true,
+                'sort' => false,
+                'hide' => true,
+                'delete' => true,
+              ),
+              'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.image_pokemon',
+            ),
+          ),
+        ),
+        'mse_list_item' => 
+        array (
+          'exclude' => true,
+          'label' => 'List Item',
+          'config' => 
+          array (
+            'appearance' => 
+            array (
+              'collapseAll' => '1',
+              'enabledControls' => 
+              array (
+                'dragdrop' => '1',
+              ),
+              'levelLinksPosition' => 'bottom',
+              'useSortable' => '1',
+            ),
+            'foreign_field' => 'parent_uid',
+            'foreign_table' => 'mse_tb_my_list',
+            'foreign_table_field' => 'parent_table',
+            'maxitems' => '20',
+            'minitems' => '3',
+            'type' => 'inline',
+          ),
         ),
         't3_origuid' => 
         array (
@@ -16042,6 +16212,45 @@ return array (
             ),
           ),
           'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_mask_button_name,tx_mask_button_link,tx_mask_button_color,tx_mask_text_color,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'pokemon_element' => 
+        array (
+          'showitem' => '
+            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+            --palette--;;general,
+            header; Main Header,
+            bodytext; Main Body,
+            selected_pokemon; Choose your pokemon,
+            type_pokemon; Pokemon Radio,
+            image_pokemon; Pokemon Image,
+            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+            --palette--;;hidden,
+            --palette--;;access,
+        ',
+          'columnsOverrides' => 
+          array (
+            'bodytext' => 
+            array (
+              'config' => 
+              array (
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default',
+              ),
+            ),
+          ),
+        ),
+        'inheritance_element' => 
+        array (
+          'showitem' => '
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+        --palette--;;general,
+        header; List Header,
+        mse_list_item; Label,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+            --palette--;;hidden,
+            --palette--;;access,
+    ',
+          'canNotCollapse' => 1,
         ),
       ),
       'palettes' => 
@@ -21283,6 +21492,204 @@ return array (
             'type' => 'passthrough',
             'default' => 0,
           ),
+        ),
+      ),
+    ),
+    'mse_tb_my_list' => 
+    array (
+      'ctrl' => 
+      array (
+        'title' => 'Label',
+        'label' => 'title',
+        'tstamp' => 'tstamp',
+        'crdate' => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'sortby' => 'sorting',
+        'versioningWS' => true,
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'delete' => 'deleted',
+        'hideTable' => true,
+        'enablecolumns' => 
+        array (
+          'disabled' => 'hidden',
+        ),
+        'searchFields' => 'title',
+      ),
+      'columns' => 
+      array (
+        'sys_language_uid' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'special' => 'languages',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                1 => -1,
+                2 => 'flags-multiple',
+              ),
+            ),
+            'default' => 0,
+          ),
+        ),
+        'l10n_parent' => 
+        array (
+          'displayCond' => 'FIELD:sys_language_uid:>:0',
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'default' => 0,
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'foreign_table' => 'mse_tb_my_list',
+            'foreign_table_where' => 'AND `mse_tb_my_list`.`pid`=###CURRENT_PID### AND `mse_tb_my_list`.`sys_language_uid` IN (-1,0)',
+          ),
+        ),
+        'l10n_diffsource' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        't3ver_label' => 
+        array (
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.versionLabel',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => 30,
+            'max' => 255,
+          ),
+        ),
+        'hidden' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
+          'config' => 
+          array (
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => '',
+                'invertStateDisplay' => true,
+              ),
+            ),
+          ),
+        ),
+        'title' => 
+        array (
+          'exclude' => true,
+          'label' => 'Your header label',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => 30,
+            'eval' => 'trim,required',
+          ),
+        ),
+        'parent_uid' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'default' => 0,
+            'foreign_table' => 'tt_content',
+            'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.sys_language_uid IN (-1, ###REC_FIELD_sys_language_uid###)',
+          ),
+        ),
+        'parent_table' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+      ),
+      'types' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general, title, bodytext,
+            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, 
+            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden',
+        ),
+      ),
+    ),
+    'tx_sitepackage_domain_model_product' => 
+    array (
+      'ctrl' => 
+      array (
+        'title' => 'Product',
+        'label' => 'name',
+        'iconfile' => 'EXT:sitepackage/Resources/Public/Icons/cat.svg',
+      ),
+      'columns' => 
+      array (
+        'name' => 
+        array (
+          'label' => 'Name',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => '20',
+            'eval' => 'trim',
+          ),
+        ),
+        'description' => 
+        array (
+          'label' => 'Description',
+          'config' => 
+          array (
+            'type' => 'text',
+            'eval' => 'trim',
+          ),
+        ),
+        'quantity' => 
+        array (
+          'label' => 'Quantity',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => '4',
+            'eval' => 'int',
+          ),
+        ),
+      ),
+      'types' => 
+      array (
+        0 => 
+        array (
+          'showitem' => 'name, description, quantity',
         ),
       ),
     ),

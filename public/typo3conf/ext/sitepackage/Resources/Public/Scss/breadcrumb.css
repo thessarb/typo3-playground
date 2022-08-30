@@ -1,0 +1,7 @@
+.bredicrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 15px;
+  background-color: #506060;
+}/*# sourceMappingURL=breadcrumb.css.map */

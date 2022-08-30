@@ -144,4 +144,16 @@ a:link {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.acccontainer {
+  width: 66vw;
+}
+
+.bredicrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 15px;
+  background-color: #506060;
 }/*# sourceMappingURL=layout.css.map */

@@ -1,1 +1,0 @@
-active|b:1;authorized|b:1;lastSessionId|i:1660897205;tstamp|i:1660897207;expires|i:1660898107;isBackendSession|b:1;backendUserSession|a:3:{s:5:"nonce";s:40:"8698e611808c16df717a186038a3a0beb18e62b2";s:6:"userId";i:1;s:4:"hmac";s:32:"753cb13bab59a5fbf9e04d5388e324fa";}installToolFormToken|s:64:"5ebc063bbbb8934d49cd86c44f5bf2599446485bea207aaa73d636d7d75b95f6";

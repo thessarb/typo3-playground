@@ -5,34 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beca75ca-d80c-4ed8-a6b3-39c38f587438" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Configuration/TypoScript/setup.typoscript" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Configuration/TypoScript/setup.typoscript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Layouts/Page/Default.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Layouts/Page/Default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/basic_element.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/basic_element.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/basic_element.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/basic_element.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Partials/Page/Breadcrumb/breadcrumb.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Partials/Page/Breadcrumb/breadcrumb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Templates/Mask/Frontend/Accordion.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Templates/Mask/Frontend/Accordion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Templates/Page/Default.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Private/Templates/Page/Default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/JavaScript/Dist/Mask/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/JavaScript/Dist/Mask/accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/accordion.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/accordion.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/accordion.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/menu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/extensions/sitepackage/Resources/Public/Scss/menu.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/bootstrapicons" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/bootstrapicons" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/bootstrapicons/Resources/Public/Css/bootstrap-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/bootstrapicons/Resources/Public/Css/bootstrap-icons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Configuration/TypoScript/setup.typoscript" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Configuration/TypoScript/setup.typoscript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Layouts/Page/Default.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Layouts/Page/Default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/basic_element.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/basic_element.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/basic_element.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/basic_element.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Partials/Page/Breadcrumb/breadcrumb.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Partials/Page/Breadcrumb/breadcrumb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Templates/Mask/Frontend/Accordion.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Templates/Mask/Frontend/Accordion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Templates/Page/Default.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Private/Templates/Page/Default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/JavaScript/Dist/Mask/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/JavaScript/Dist/Mask/accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/accordion.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/accordion.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/accordion.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/menu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/typo3conf/ext/sitepackage/Resources/Public/Scss/menu.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/code/core/tca_base_30732460b02de99059c33d22c2ef063d2037b7ae.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/code/core/tca_base_30732460b02de99059c33d22c2ef063d2037b7ae.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/BackendUser_action_index_fd964802c2f063892924a266b14aa0452ac88bc5.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/List_action_index_a8076f7e67aef510a8332955d639cc393faaacca.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/FileList_action_index_3418ff111c281983323bf06b4324465df6f51883.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/PageLayout_action_pageLayout_b4bc0b1844b0e1c768e67c8db110d77c0497c77d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_index_72acd451603c66456fb475322c0f3b4be86cc2a9.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_index_d79a67bb7327cadab5d18241f58088bae2dd45ec.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/ViewHelpers_Be_Widget_Paginate_action_index_146e8f5b9da37b9ec54a887d346cb04c312d2f4a.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/layout_Default_html_4b84333abcfe2ee825571eb860f78cb60c4abd81.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/layout_main_html_3708128db0be246a97fe2a8ea156c8762bbc88c3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_BackendUser_IndexListRow_5e57f258aec35eba01366778822c7c138cf04f69.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_BackendUser_PaginatedListWidgetBody_f1bdc3bdb60ec1ecb3a4db08a7fa796f5dc95b40.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_BackendUser_PaginatedListWidget_4136cc52e861af545d40680419973e402c857d5e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Filters_BackendUser_Index_2b0d471f9b55210a38778f440f24a455e1f4cd6c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_List_UploadForm_171ea27a5af5560dfd03abd18a7227751184114b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_accordion_1325030557dae4341f1e901de4651406da089317.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_03691ea1e1bda8bf1416bd87fb5aac35c43a8fb5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_224c089153cac17a27298e9db87b01550c805f91.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_31b00cc5ca1113e10e3d0777157e1aea184b656b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_35cdaa136dd1d6f6477d61548896a04fce411942.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_6287161229843685c8e390b3911058619384f14c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_669119ecb220039e6d668e8913073f4bbf8a3718.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_8f95543573d45cf724cde4179d29d776d8e55f99.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_a9d6907e5415081b5b3cbc248f98f7d1bd024777.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_acdbc650876af8e3f80dc9bbdcf8e21be1689e2a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_default_b25840c3f66c46a99bf36cc34ea9a9073772be16.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_index_3c4bcd2efe3da2a03e3844dfd976bc2764843f58.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_index_4efc09245bb1843dfd393f6bae2254a8a0fabc0f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/Standard_action_index_ea18420dc708b7f8f1202fe5f7e338fed923932b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/layout_Default_html_fe45124e50d9ce498b56efdf47e654391f1ff077.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Breadcrumb_breadcrumb_html_9624d815e93d89fe9f6705601560547750ff7bd3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_ClipBoard_36e0f283a664b4bd4b857062e45a43a153f3e85e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Clipboard_CopymodeSelector_c1e3e3850040418f8eefcf6b661455954b7a9eb5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Clipboard_Tab_b74a476e577c78fef9854d5a729233287cc36abb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_1fcc1ec18c789391ca102144807682cb8630cd7a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_254a5c23a3885e3c5d8708f23779ff8cfe4c4b2a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_38b6db904e89870dde99aa91a46866e2c03a70d7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_5c1ff12a5df21de0f247d9b72db010530b6e49ed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_68e0387c4434343480470c6805528a7c404ca40a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_72ed74f0c63b00ab88deda2c934e821c8f7bf17c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_763a485d743e030673ad46bbd1dc15f0133141f5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_8218cc104c65e85eddf50be29471ecd72d8a871f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_84ad64fa7b6ea96e305386612d322205d5295fd2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_c90c3684598d1222a5c8e5bb1bd315a201bad6bf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerdark_html_e9a7a6d0b8abac719f0ed12ab31192b097d7213a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerlight_html_924ea79d8c408e59fc9124ef3c919ec646aa2c1e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerlight_html_99f40dc35c9e2dde2ebbcecaf08b95655b5bd776.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerlight_html_a07cc25bfeb1cb46d844cabe7c65665cce689a43.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_Header_headerlight_html_f0e6b08b1b6bf17ddaef62f9df379ae028f13675.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_ListOptions_eec856f5af0b796a2088e198a9cf594d40d16d20.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_Grid_ColumnHeader_15c24558bd6bfd046ec6964e1a321b3acb2246d8.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_Grid_Column_68b746339b4dc5e8968bc036a72da88123d55d84.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_Grid_e5eec123e30287b8925dc4297820ada082cc36a1.php" beforeDir="false" />
@@ -40,28 +76,20 @@
       <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_RecordDefault_Header_bc12c14d38bd76ce591c1b7f20eb1176e34605a4.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_RecordDefault_Preview_e4fa096c3cacfc338567b032ba0988c729cb1735.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_PageLayout_Record_02864e705493aee36064aaa08ababfb747cd1eb1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/code/fluid_template/partial_SearchForm_04f9d020ec6ab33d059e3e8e5139388840163bec.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/assets/T3editorConfiguration_0300a3f3440e56ddde6db400eaf1558c97416d7a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/data/dashboard_rss/d9fee822f515f03780540e04a72973ca" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/data/dashboard_rss/d9fee822f515f03780540e04a72973ca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/ClassSchemata_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/data/extbase/ClassSchemata_071ee8a9a0f75bd500c27834be3debc2f58f6b88" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/DataMap_TYPO3CMSBeuserDomainModelBackendUserGroup_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/DataMap_TYPO3CMSBeuserDomainModelBackendUser_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/DataMap_TYPO3CMSExtensionmanagerDomainModelExtension_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/extbase/DataMap_TYPO3CMSExtensionmanagerDomainModelRepository_071ee8a9a0f75bd500c27834be3debc2f58f6b88" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/3ab901800976f6d98ca66ce1e0f147b5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/3edf6b44d902550957afdb92bdbad9d6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/42f1998c310fbcfd9565e2c8da314a31" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/45dbc38199dcb2a16f2b86221a12cdf2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/6eb085bc903b8f1e2b86d616090309f1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/1e1ed7713008c932286a20b99e7cb4d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/3852e0d0533e720e834e7f1eadd9417b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/634e8d0bf0dbb4a7835de5c1dd9a165d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/681a3d69a801d8e7f8bb29aaca168421" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/738f3482b5cf108d01ac67c88226581f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/7678c9dbce4ab63de87b3598da55facc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/7aede437f7e70f02f5b9a4d91f90ab11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/757e124e1381552c45f78a0c034dd556" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/82ec5bd0bc6bf0a6ff3781ac08f3aa33" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/881cae32506b0e1c4a54b94f8842df89" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/91b0ec9dfdd84917225856e9095837d4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/93ccd6aa668b2d46ad9ec2f0a259f866" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/a25d33b1a6dea9de9382cc9c19fbd5a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/c710ee5d531006bea96ad6b2200bc197" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/df7b17f57ba81744b09b59662271e15d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/f934eb2b12c3de682221828e81d50bc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/b4a9402595e9fa622f8b0260f7101b26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/c3d92ade71e9ae151992c442ff304d0a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/data/l10n/cabcd8c143f424c1cd5a6181e1890375" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/typo3_b34a39b768.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/typo3_b34a39b768.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +204,7 @@
     "WebServerToolWindowPanel.toolwindow.show.date": "false",
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "last_opened_file_path": "C:/Users/arber/Desktop/event.contenance",
+    "last_opened_file_path": "C:/Users/arber/Desktop/project",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -204,6 +232,7 @@
       <workItem from="1660562143331" duration="2789000" />
       <workItem from="1660630226591" duration="1247000" />
       <workItem from="1660647960722" duration="1855000" />
+      <workItem from="1661239474789" duration="20000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,29 @@
+#############
+#### RTE ####
+#############
+mod.wizards.newContentElement.wizardItems {
+        strange.header = MyStrangeElements
+}
+mod.wizards.newContentElement.wizardItems {
+    strange {
+        elements {
+            pokemonElement {
+            iconIdentifier = content-target
+            title = Pokemon Element
+            description = An element for displaying Pokemons
+            tt_content_defValues {
+                CType = pokemon_element
+                }
+            }
+            inheritanceElement {
+            iconIdentifier = content-target
+            title = Inheritance Element
+            description = An element for testing inheritance
+            tt_content_defValues {
+                    CType = inheritance_element
+                }
+            }
+        }
+        show := addToList(pokemonElement, inheritanceElement)
+    }
+}

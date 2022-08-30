@@ -7,8 +7,8 @@
         <f:else>
             <f:render partial="Header/headerlight.html" arguments="{_all}" />
         </f:else>
-    </f:if>
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />  
+    </f:if>  
     <f:render partial="Breadcrumb/breadcrumb.html" arguments="{_all}"/>
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
     <f:render partial="Footer/Footer.html" arguments="{_all}"/>
 </f:section>
